@@ -1,0 +1,126 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: "outfit";
+}
+
+@font-face {
+    font-family: "outfit";
+    src: url("Outfit-VariableFont_wght.ttf");
+}
+
+#mainheader:hover {
+    cursor: pointer;
+
+    .icon {
+        display: inline-flex;
+    }
+
+    .image {
+        opacity: 70%;
+    }
+}
+
+#mainheader:hover::after {
+    /* display: block; */
+    opacity: 30%;
+}
+
+#mainheader::after {
+    content: '';
+    width: 350px;
+    height: 100%;
+    background: hsl(178, 100%, 50%);
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 10px;
+    /* display: none; */
+    opacity: 0%;
+    overflow-y: hidden;
+}
+
+.image {
+    width: 350px;
+    margin-left: 25px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+#mainheader {
+    position: relative;
+    height: 350px;
+}
+
+.icon {
+    position: absolute;
+    bottom: 150px;
+    left: 170px;
+    width: 70px;
+    display: none;
+}
+
+.contaner {
+    width: 400px;
+    height: 650px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: hsl(216, 50%, 16%);
+    padding-top: 20px;
+    border-radius: 20px;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 20px;
+}
+
+#mainsection {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.Equilibrium {
+    font-size: x-large;
+    font-weight: 700;
+
+    a {
+        text-decoration: none;
+        color: hsl(178, 100%, 50%);
+    }
+}
+
+.balance {
+    width: 300px;
+    font-size: large;
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+    font-size: large;
+    font-weight: 700;
+    border-bottom: 1px hsl(215, 32%, 27%) solid;
+    padding-bottom: 30px;
+}
+
+.days {
+    position: relative;
+    bottom: 50px;
+    left: 250px;
+    font-size: large;
+}
+
+.avatar {
+    margin-right: 300px;
+    width: 50px;
+    border: 1px white solid;
+    border-radius: 50px;
+}
+
+.ava {
+    position: relative;
+    bottom: 60px;
+    left: 70px;
+    font-size: larger;
+}
+
+.avatarlink {
+    text-decoration: none;
+    color: hsl(178, 100%, 50%);
+}
